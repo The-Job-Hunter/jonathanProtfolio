@@ -101,14 +101,14 @@ export const TIMELINE: TimelineItem[] = [
     {
         id: 1,
         company: "Kerberus Cyber Security",
-        role: "Director of Product Analytics",
+        role: "Head of Product Analytics",
         period: "2025 - PRESENT",
         description: [
             "Kerberus is the leader in crypto web3 scam protection for B2C",
             "Designed data architecture for product and business analytics",
             "Built Mixpanel analytics foundation"
         ],
-        logo: "https://logo.clearbit.com/kerberus.com"
+        logo: "https://logo.clearbit.com/kerberus.com" 
     },
     {
         id: 2,
@@ -127,7 +127,7 @@ export const TIMELINE: TimelineItem[] = [
     {
         id: 3,
         company: "Tarya Fintech",
-        role: "Director of Product Management",
+        role: "Product Team Lead",
         period: "2021 - 2023",
         description: [
             "Tarya Fintech develops loan management and embedded finance solutions for banks and financial institutions.",
@@ -149,13 +149,13 @@ export const TIMELINE: TimelineItem[] = [
     },
     {
         id: 5,
-        company: "Leumi Bank",
+        company: "Yael Group",
         role: "Head of Product",
         period: "2017 - 2019",
         description: [
             "Directed award-winning digital mortgage & credit products for Israeli banks."
         ],
-        logo: "https://logo.clearbit.com/leumi.co.il"
+        logo: "https://logo.clearbit.com/yaelgroup.com"
     },
     {
         id: 6,

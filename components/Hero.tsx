@@ -24,11 +24,11 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-6 text-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-4 text-center overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
       
-      <div className="flex flex-col items-center max-w-5xl mx-auto">
+      <div className="flex flex-col items-center max-w-6xl mx-auto">
         <div className="relative mb-8">
           <div className="size-44 md:size-52 rounded-full border border-gray-200/50 bg-white dark:bg-surface-dark shadow-2xl overflow-hidden">
             <div 
@@ -44,14 +44,16 @@ const Hero: React.FC = () => {
           Jonathan Hazan
         </h1>
         
-        <div className="flex flex-col items-center gap-6 mb-12">
+        <div className="flex flex-col items-center gap-6 mb-12 w-full">
           <p className="text-xl md:text-2xl font-medium text-gray-500 dark:text-gray-400">
             Head of Product
           </p>
-          <div className="text-xl md:text-3xl font-medium text-charcoal dark:text-gray-200 max-w-4xl leading-snug flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
-            <span>I turn ideas into products through</span>
+          
+          {/* Main sentence container - forced single row */}
+          <div className="text-sm sm:text-xl md:text-3xl font-medium text-charcoal dark:text-gray-200 w-full flex flex-nowrap justify-center items-center gap-x-1.5 sm:gap-x-2">
+            <span className="whitespace-nowrap">I turn ideas into products through</span>
             <div className="relative h-[1.5em] flex items-center text-left">
-               {/* Invisible span to set width based on longest keyword - prevents layout shift and tightens centering */}
+               {/* Invisible span to set width based on longest keyword */}
                <span className="opacity-0 whitespace-nowrap font-extrabold pointer-events-none select-none">
                  {longestKeyword}
                </span>
